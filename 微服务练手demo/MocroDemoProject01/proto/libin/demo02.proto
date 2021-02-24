@@ -1,0 +1,17 @@
+//版本号
+syntax = "proto3";
+
+option go_package = "./;go_micro_service_product";//目标地址;包名
+
+//服务
+service Demo02{ //命名规范：开头大写，驼峰
+  rpc SayHello(ProductIn) returns (ProductOut) {}
+}
+//消息格式
+message ProductIn{
+  string mess = 1;
+}
+
+message ProductOut{
+  int64 ans = 1;
+}
