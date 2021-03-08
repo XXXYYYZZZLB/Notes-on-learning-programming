@@ -8,6 +8,9 @@ typedef struct LNode{
 	struct LNode *next;//指针域 
 }LNode,*LinkList;
 
+//LNode * L; 	//声明一个指向单链表第一个结点的指针
+//LinkList L;	//声明一个指向单链表第一个结点的指针
+
 
 
 
@@ -184,7 +187,7 @@ ListInsert(LinkList &L,int i,ElemType e){
 
 
 void test(){
-	LinkList L;
+	LinkList L;	//声明一个指向单链表第一个结点的指针
 	InitList(L);
 	
 }
